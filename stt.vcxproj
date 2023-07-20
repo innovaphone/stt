@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\ilib-cpp\asn1.cpp" />
+    <ClCompile Include="common\ilib-cpp\asn1_ber.cpp" />
+    <ClCompile Include="common\ilib-cpp\asn1_per.cpp" />
+    <ClCompile Include="common\ilib-cpp\base64.cpp" />
+    <ClCompile Include="common\ilib-cpp\btree.cpp" />
+    <ClCompile Include="common\ilib-cpp\cipher.cpp" />
+    <ClCompile Include="common\ilib-cpp\crc.cpp" />
+    <ClCompile Include="common\ilib-cpp\hash.cpp" />
+    <ClCompile Include="common\ilib-cpp\http_query_args.cpp" />
+    <ClCompile Include="common\ilib-cpp\ipaddr.cpp" />
+    <ClCompile Include="common\ilib-cpp\json.cpp" />
+    <ClCompile Include="common\ilib-cpp\lib.cpp" />
+    <ClCompile Include="common\ilib-cpp\str.cpp" />
+    <ClCompile Include="common\ilib-cpp\types.cpp" />
+    <ClCompile Include="common\ilib-cpp\uri.cpp" />
+    <ClCompile Include="common\ilib-cpp\xml.cpp" />
+    <ClCompile Include="common\ilib-cpp\zip.cpp" />
+    <ClCompile Include="sdk\common\linux\dns\dns.cpp" />
+    <ClCompile Include="sdk\common\linux\timezone\timezone.cpp" />
+    <ClCompile Include="sdk\common\linux\valgrind\valgrind.cpp" />
+    <ClCompile Include="sdk\common\service\dbfiles\dbfiles_service.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_client_base.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_engine.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_frame.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_header.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_header_field.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_header_hpack.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_request.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_stream.cpp" />
+    <ClCompile Include="sdk\common\service\http2_client\http2_timeout.cpp" />
+    <ClCompile Include="sdk\common\service\http_client\http_client.cpp" />
+    <ClCompile Include="sdk\common\service\http_client\ntlm.cpp" />
+    <ClCompile Include="sdk\common\service\publisher\publisher.cpp" />
+    <ClCompile Include="sdk\common\service\replicator\replicator.cpp" />
+    <ClCompile Include="sdk\common\service\ibmtranslation\ibmtranslation.cpp" />
+    <ClCompile Include="stt-main.cpp" />
+    <ClCompile Include="stt\rccapi.cpp" />
+    <ClCompile Include="stt\stt.cpp" />
+    <ClCompile Include="stt\stt_tasks.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdk\common\interface\translation.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="sdk\common\service\ibmtranslation\ibmtranslation.mak" />
+    <None Include="stt.mak" />
+    <None Include="stt\apps\apps.mak" />
+    <None Include="stt\apps\innovaphone-searchbar.js" />
+    <None Include="stt\apps\innovaphone-stt.css" />
+    <None Include="stt\apps\innovaphone-stt.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="stt\apps\innovaphone-stt.js" />
+    <None Include="stt\apps\innovaphone-stttexts.js" />
+    <None Include="stt\apps\innovaphone-transcriptionbox.js" />
+    <None Include="stt\apps\innovaphone.sttmanager.css" />
+    <None Include="stt\apps\innovaphone.sttmanager.js" />
+    <None Include="stt\apps\innovaphone.sttmanagertexts.js" />
+    <None Include="stt\submodules.mak" />
+    <None Include="stt\stt.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\contacts\common\ilib\xml.h" />
+    <ClInclude Include="common\ilib\httpfile_api.h" />
+    <ClInclude Include="sdk\common\interface\translation.h" />
+    <ClInclude Include="sdk\common\linux\dns\dns.h" />
+    <ClInclude Include="sdk\common\linux\timezone\timezone.h" />
+    <ClInclude Include="sdk\common\linux\timezone\tzfile.h" />
+    <ClInclude Include="sdk\common\service\dbfiles\dbfiles_service.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_client_base.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_client_exception.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_client_tools.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_data_buffer.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_engine.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_frame.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_header.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_header_field.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_header_hpack.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_header_hpack_types.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_request.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_stream.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http2_timeout.h" />
+    <ClInclude Include="sdk\common\service\http2_client\http_client_engine.h" />
+    <ClInclude Include="sdk\common\service\http_client\http_client.h" />
+    <ClInclude Include="sdk\common\service\http_client\ntlm.h" />
+    <ClInclude Include="sdk\common\service\publisher\publisher.h" />
+    <ClInclude Include="sdk\common\service\replicator\replicator.h" />
+    <ClInclude Include="sdk\common\service\ibmtranslation\ibmtranslation.h" />
+    <ClInclude Include="stt\rccapi.h" />
+    <ClInclude Include="stt\stt.h" />
+    <ClInclude Include="stt\stt_tasks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="stt\apps\innovaphone-stt.png" />
+    <Image Include="stt\stt.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e0104876-bab2-4678-bf5b-ba325726d66e}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>LinuxMakefileProject</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Visual GDB)|ARM'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Visual GDB)|ARM64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Visual GDB)|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak arm</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-arm</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\bin</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\arm-linux-gnueabi\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\8\armel\usr\include;$(innovaphone-sdk)\app-platform-libs\8\armel\usr\include\postgresql;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\lib\gcc\arm-linux-gnueabi\7.2.0\include;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\arm-linux-gnueabi\include\c++\7.2.0\arm-linux-gnueabi</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely)</SourcesToCopyRemotelyOverride>
+    <ReBuildCommandLine>make -f stt.mak clean-arm &amp;&amp; call common/build/buildnum stt.mak arm</ReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak arm "DEBUG=1"</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-arm DEBUG=1</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\bin</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\arm-linux-gnueabi\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\8\armel\usr\include;$(innovaphone-sdk)\app-platform-libs\8\armel\usr\include\postgresql;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\lib\gcc\arm-linux-gnueabi\7.2.0\include;$(innovaphone-sdk)\arm-7.2.0-linux-gnu\arm-linux-gnueabi\include\c++\7.2.0\arm-linux-gnueabi</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely)</SourcesToCopyRemotelyOverride>
+    <ReBuildCommandLine>make -f stt.mak clean-arm DEBUG=1 &amp; call common/build/buildnum stt.mak arm "DEBUG=1"</ReBuildCommandLine>
+    <RemoteDebuggerCommand>/apps/stt/stt</RemoteDebuggerCommand>
+    <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak arm64</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-arm64</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\bin</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\aarch64-linux-gnu\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\10\arm64\usr\include;$(innovaphone-sdk)\app-platform-libs\10\arm64\usr\include\postgresql;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\lib\gcc\aarch64-linux-gnu\7.2.0\include;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\aarch64-linux-gnu\include\c++\7.2.0\aarch64-linux-gnu</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely)</SourcesToCopyRemotelyOverride>
+    <ReBuildCommandLine>make -f stt.mak clean-arm64 &amp;&amp; call common/build/buildnum stt.mak arm64</ReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm64'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak arm64 "DEBUG=1"</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-arm64 DEBUG=1</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\bin</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\aarch64-linux-gnu\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\10\arm64\usr\include;$(innovaphone-sdk)\app-platform-libs\10\arm64\usr\include\postgresql;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\lib\gcc\aarch64-linux-gnu\7.2.0\include;$(innovaphone-sdk)\aarch64-7.2.0-linux-gnu\aarch64-linux-gnu\include\c++\7.2.0\aarch64-linux-gnu</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <SourcesToCopyRemotelyOverride>@(SourcesToCopyRemotely);@(DataFilesToCopyRemotely)</SourcesToCopyRemotelyOverride>
+    <ReBuildCommandLine>make -f stt.mak clean-arm64 DEBUG=1 &amp;&amp; call common/build/buildnum stt.mak arm64 "DEBUG=1"</ReBuildCommandLine>
+    <RemoteDebuggerCommand>/apps/stt/stt</RemoteDebuggerCommand>
+    <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak x86_64</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-x86_64</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\x86_64-linux-gnueabi\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\8\x86_64\usr\include;$(innovaphone-sdk)\app-platform-libs\8\x86_64\usr\include\postgresql;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\lib\gcc\x86_64-linux-gnueabi\7.2.0\include;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\x86_64-linux-gnueabi\include\c++\7.2.0\x86_64-linux-gnueabi</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <ReBuildCommandLine>make -f stt.mak clean-x86_64 &amp;&amp; call common/build/buildnum stt.mak x86_64</ReBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalRemoteCopySources>false</LocalRemoteCopySources>
+    <BuildCommandLine>call common/build/buildnum stt.mak x86_64 "DEBUG=1"</BuildCommandLine>
+    <CleanCommandLine>make -f stt.mak clean-x86_64 DEBUG=1</CleanCommandLine>
+    <ExecutablePath>$(innovaphone-sdk)\app-platform-buildtls;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\bin;$(ExecutablePath)</ExecutablePath>
+    <NMakeIncludeSearchPath>sdk;.;common\lap;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\x86_64-linux-gnueabi\include\c++\7.2.0;$(innovaphone-sdk)\app-platform-libs\8\x86_64\usr\include;$(innovaphone-sdk)\app-platform-libs\8\x86_64\usr\include\postgresql;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\lib\gcc\x86_64-linux-gnueabi\7.2.0\include;$(innovaphone-sdk)\x86_64-7.2.0-linux-gnu\x86_64-linux-gnueabi\include\c++\7.2.0\x86_64-linux-gnueabi</NMakeIncludeSearchPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\</IntDir>
+    <ReBuildCommandLine>make -f stt.mak clean-x86_64 DEBUG=1 &amp;&amp; call common/build/buildnum stt.mak x86_64 "DEBUG=1"</ReBuildCommandLine>
+    <RemoteDebuggerCommand>/apps/stt/stt</RemoteDebuggerCommand>
+    <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PostBuildEvent>
+      <Command>IF "%INNOVAPHONE-SDK-DEPLOY-APP%"=="YES" deploy-app --remoteMachine="$(RemoteTarget)" --appName=$(MSBuildProjectName) --appBinary="$(ProjectDir)arm-debug\stt\stt" --vsMode</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <PostBuildEvent>
+      <Command>IF "%INNOVAPHONE-SDK-DEPLOY-APP%"=="YES" deploy-app --remoteMachine="$(RemoteTarget)" --appName=$(MSBuildProjectName) --appBinary="$(ProjectDir)arm64-debug\stt\stt" --vsMode</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PostBuildEvent>
+      <Command>IF "%INNOVAPHONE-SDK-DEPLOY-APP%"=="YES" deploy-app --remoteMachine="$(RemoteTarget)" --appName=$(MSBuildProjectName) --appBinary="$(ProjectDir)x86_64-debug\stt\stt" --vsMode</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <innovaphone>
+      <ProjectType>APP</ProjectType>
+      <SDKVersion>13r3</SDKVersion>
+    </innovaphone>
+  </ProjectExtensions>
+</Project>
